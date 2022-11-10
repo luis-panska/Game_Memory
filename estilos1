@@ -1,0 +1,21 @@
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('A.gif');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  
+}
+.full { width: 100%; }
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}

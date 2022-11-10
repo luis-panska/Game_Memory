@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        w3-table {
+            border-collapse: separate;
+            border-spacing: 50px 10px;
+            table-layout: fixed;
+            width: 200px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Juego de Memoria</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <style>
+        .w3-lobster {
+            font-family: "Lobster", serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <video autoplay loop muted id="videoBackground">
+        <source src="Tunnel - 27438 (2).mp4" type="video/mp4">
+    </video>
+
+    <main>
+
+
+
+        <div class="w3-container w3-blue">
+            <div class="w3-container w3-lobster">
+
+                <p class="w3-xxxlarge">Juego de memoria</p>
+            </div>
+        </div>
+        <br>
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <div class="w3-container w3-center">
+                    <table style="width:80%;max-width:320px">
+                        <tr>
+                            <td><button id="0" onclick="destapar(0)"></button></td>
+                            <td><button id="1" onclick="destapar(1)"></button></td>
+                            <td><button id="2" onclick="destapar(2)"></button></td>
+                            <td><button id="3" onclick="destapar(3)"></button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="4" onclick="destapar(4)"></button></td>
+                            <td><button id="5" onclick="destapar(5)"></button></td>
+                            <td><button id="6" onclick="destapar(6)"></button></td>
+                            <td><button id="7" onclick="destapar(7)"></button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="8" onclick="destapar(8)"></button></td>
+                            <td><button id="9" onclick="destapar(9)"></button></td>
+                            <td><button id="10" onclick="destapar(10)"></button></td>
+                            <td><button id="11" onclick="destapar(11)"></button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="12" onclick="destapar(12)"></button></td>
+                            <td><button id="13" onclick="destapar(13)"></button></td>
+                            <td><button id="14" onclick="destapar(14)"></button></td>
+                            <td><button id="15" onclick="destapar(15)"> </button></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <div  style="width:80%;max-width:450px" class="w3-container w3-center">
+
+                <a id="Aciertos" class="w3-button w3-theme-purple w3-margin">Aciertos: 0</a>
+                <a id="t-restante" class="w3-button w3-theme-purple w3-margin">Tiempo: 30 segundos</a>
+                <a id="Movimientos" class="w3-button w3-theme-purple w3-margin ">MOVIMIENTO</a>
+
+            </div>
+            
+        </div>
+
+
+    </main>
+    <!--<footer>
+        <p>Juego programado por 👉🏿 Aron Rodrigues </p>
+        <p>Juego programado por 👉🏿 Danilo Llantoy Alvan</p>
+        <p>Juego programado por 👉🏿   Noe Diaz carhuaricra </p>
+    </footer>-->
+    <script src="mainn.js"></script>
+</body>
+
+</html>
